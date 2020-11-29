@@ -2,16 +2,20 @@ package project1;
 
 import java.util.Arrays;
 
+//Find highest number of adjacent 1 integers
 public class Main {
 
 	public static void main(String[] args) {
 
-		int[][] testray = new int[][] { { 0, 0, 0, 1, 0 }, { 1, 1, 0, 1, 1 }, { 0, 1, 0, 0, 1 }, { 0, 1, 1, 0, 1 },
-				{ 1, 0, 1, 0, 1 } };
+		int[][] testray = new int[][] { { 0, 0, 0, 1, 0 },
+					       { 1, 1, 0, 1, 1 },
+					       { 0, 1, 0, 0, 1 },
+					       { 0, 1, 1, 0, 1 },
+						{ 1, 0, 1, 0, 1 }
+					      };
 
 		System.out.println(dephtFirstSearch(testray));
 		// should return 7
-
 	}
 
 	public static int dephtFirstSearch(int[][] matrix) {
@@ -33,6 +37,7 @@ public class Main {
 		return maxRegionSize;
 	}
 
+	
 	private static int getRegionSizeDFS(int[][] matrix, int row, int column) {
 
 		if (row < 0 || column < 0 || row > matrix.length - 1 || column > matrix[row].length - 1)
