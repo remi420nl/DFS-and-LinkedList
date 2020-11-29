@@ -11,8 +11,7 @@ public class Main {
 					        { 1, 1, 0, 1, 1 },
 					        { 0, 1, 0, 0, 1 },
 					        { 0, 1, 1, 0, 1 },
-						{ 1, 0, 1, 0, 1 }
-					      };
+						{ 1, 0, 1, 0, 1 }};
 
 		System.out.println(dephtFirstSearch(testray));
 		// should return 7
